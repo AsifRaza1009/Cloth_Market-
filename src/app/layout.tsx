@@ -2,7 +2,7 @@ import Wrapper from '@/components/shared/Wraper'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Maven_Pro, } from 'next/font/google'
-
+import NavBar from '@/components/views/NavBar'
 const inter = Maven_Pro({ subsets: ['latin'],
 weight: ["400","500","700","900","600","800"] })
 
@@ -22,6 +22,7 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <Wrapper>
+        {/* <NavBar/> */}
         {children}
         </Wrapper>
         </body>
